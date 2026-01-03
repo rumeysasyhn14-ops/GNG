@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GNG</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: black; /* Arka plan siyah */
+            color: white; /* Yazılar beyaz */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #0288d1;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #026ca1;
+        }
+
+        #secondContent {
+            display: none; /* Başta gizli */
+            margin-top: 40px;
+        }
+
+        #secondContent p {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- İlk Fotoğraf -->
+<div id="firstContent">
+    <!-- Üst Yazı -->
+    <h2 id="title1">...2025 2026 DÜNYA YAKIŞIKLISI...</h2>
+
+    <!-- Fotoğraf -->
+    <img src="images/IMG_4310.jpg" alt="Fotoğraf 1" width="500">
+    <br>
+
+    <!-- Buton -->
+    <button id="showBtn">GÖSTER</button>
+</div>
+
+
+    <!-- İkinci Foto + Yazı -->
+    <div id="secondContent">
+        <img src="images/IMG_E6088.jpg" alt="Fotoğraf 2" width="500">   
+        <p>ASLAN DAYIM BİRİCİK YEĞENİNE PARA GÖNDERMEK İSTİYORMUŞ... 🙂</p>
+        <p>TABİKİİ GÖNDEREBİLİRSİN ÇOK MUTLU OLURUMMM... 🙂</p>
+        <p>TR48 0001 0090 1052 7505 4050 02 🙂</p>
+    </div>
+
+    <script>
+        document.getElementById("showBtn").onclick = function() {
+            document.getElementById("firstContent").style.display = "none";
+            document.getElementById("secondContent").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
